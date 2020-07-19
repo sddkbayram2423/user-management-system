@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+       
+       
+<tiles-definitions> 
+    <definition name="index" template="/WEB-INF/views/layout/layout.jsp"> 
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/views/headers/header.jsp" />  
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menu.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/views/footers/footer.jsp" />  
+    </definition> 
+    
+    
+    <definition name="reset" template="/WEB-INF/views/layout/layout.jsp"> 
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/views/headers/header.jsp" />  
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menu.jsp" />  
+        <put-attribute name="body" value="/WEB-INF/views/layout/reset.jsp" />  
+        <put-attribute name="footer" value="/WEB-INF/views/footers/footer.jsp" />  
+    </definition>
+    
+     <definition name="goRegisterPage" extends="index">  
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menu.jsp" />  
+        <put-attribute name="body" value="/WEB-INF/views/forms/register.jsp" />  
+    </definition> 
+    
+     <definition name="newUserForAdmin" extends="index">  
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menuAdmin.jsp" />  
+        <put-attribute name="body" value="/WEB-INF/views/forms/registerForAdmin.jsp" />  
+    </definition>  
+    
+    <definition name="goLoginPage" extends="index">  
+        <put-attribute name="title" value="Login Page" />  
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menu.jsp" /> 
+        <put-attribute name="body" value="/WEB-INF/views/forms/login.jsp" />  
+    </definition> 
+    
+     <definition name="login_for_admin" extends="index">  
+        <put-attribute name="title" value="ADMIN PANEL" />
+        <put-attribute name="header" value="/WEB-INF/views/headers/header1.jsp" />   
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menuAdmin.jsp" /> 
+    </definition>
+
+     <definition name="login_for_user" extends="index">  
+        <put-attribute name="title" value="USER PANEL" />
+        <put-attribute name="header" value="/WEB-INF/views/headers/header1.jsp" />    
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menuUser.jsp" /> 
+    </definition>  
+    
+    
+     <definition name="getEmployeelistForAdmin" extends="index">  
+        <put-attribute name="header" value="/WEB-INF/views/headers/header1.jsp" />    
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menuAdmin.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/list/employeelist_for_admin.jsp" />  
+    </definition>
+    
+     <definition name="getEmployeelistForUser" extends="index">  
+        <put-attribute name="header" value="/WEB-INF/views/headers/header1.jsp" />    
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menuUser.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/list/employeelist_for_user.jsp" />  
+    </definition>
+    
+     <definition name="getJoblistForAdmin" extends="index">  
+        <put-attribute name="header" value="/WEB-INF/views/headers/header1.jsp" />    
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menuAdmin.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/list/joblist_for_admin.jsp" />  
+    </definition>
+    
+     <definition name="getJoblistForUser" extends="index">  
+        <put-attribute name="header" value="/WEB-INF/views/headers/header1.jsp" />    
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menuUser.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/list/joblist_for_user.jsp" />  
+    </definition>
+    
+     <definition name="listUsersForAdmin" extends="index">  
+        <put-attribute name="header" value="/WEB-INF/views/headers/header1.jsp" />    
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menuAdmin.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/list/user_list.jsp" />  
+    </definition>
+    
+     <definition name="showMyProfileForUser" extends="index">  
+        <put-attribute name="header" value="/WEB-INF/views/headers/header1.jsp" />    
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menuUser.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/profiles/profile_for_user.jsp" />  
+    </definition>
+    
+     <definition name="showMyProfileForAdmin" extends="index">  
+        <put-attribute name="header" value="/WEB-INF/views/headers/header1.jsp" />    
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menuAdmin.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/profiles/profile_for_admin.jsp" />  
+    </definition>
+    
+    
+     <definition name="editUserForAdmin" extends="index">  
+        <put-attribute name="header" value="/WEB-INF/views/headers/header1.jsp" />    
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menuAdmin.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/editFroms/edit_user_profile_for_admin.jsp" />  
+    </definition>
+   
+     <definition name="detailsEmployee" extends="index">  
+        <put-attribute name="header" value="/WEB-INF/views/headers/header1.jsp" />    
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menuAdmin.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/details/employeeDetails.jsp" />  
+    </definition>
+    
+    <definition name="editEmployee" extends="index">  
+        <put-attribute name="header" value="/WEB-INF/views/headers/header1.jsp" />    
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menuAdmin.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/editFroms/editEmployee.jsp" />  
+    </definition>
+    
+
+ 	<definition name="addNewEmployee" extends="index">  
+        <put-attribute name="header" value="/WEB-INF/views/headers/header1.jsp" />    
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menuAdmin.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/forms/add_employee.jsp" />  
+    </definition>
+
+	<definition name="detailJobForAdmin" extends="index">  
+		   <put-attribute name="header" value="/WEB-INF/views/headers/header1.jsp" />    
+		   <put-attribute name="menu" value="/WEB-INF/views/menus/menuAdmin.jsp" />
+		   <put-attribute name="body" value="/WEB-INF/views/details/jobDetails.jsp" />  
+	</definition>
+	
+	<definition name="addNewJobForAdmin" extends="index">  
+		   <put-attribute name="header" value="/WEB-INF/views/headers/header1.jsp" />    
+		   <put-attribute name="menu" value="/WEB-INF/views/menus/menuAdmin.jsp" />
+		   <put-attribute name="body" value="/WEB-INF/views/forms/addJob.jsp" />  
+	</definition>
+
+
+  	<definition name="editUserForUser" extends="index">  
+        <put-attribute name="header" value="/WEB-INF/views/headers/header1.jsp" />    
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menuUser.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/editFroms/edit_user_profile_for_user.jsp" />  
+    </definition>
+    
+    <definition name="showMyProfileForAdmin" extends="index">  
+        <put-attribute name="header" value="/WEB-INF/views/headers/header1.jsp" />    
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menuAdmin.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/profiles/profile_for_admin.jsp" />  
+    </definition>
+    
+    
+    
+    <definition name="goResetFormPage" extends="index">  
+        <put-attribute name="header" value="/WEB-INF/views/headers/header.jsp" />    
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/forms/reset-password-page.jsp" />  
+    </definition>
+    
+     <definition name="goForgotPasswordFormPage" extends="index">  
+        <put-attribute name="header" value="/WEB-INF/views/headers/header.jsp" />    
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/forms/sent-token-to-email-form.jsp"/>  
+    </definition>
+    
+     <definition name="goNewPasswordPage" extends="index">  
+        <put-attribute name="header" value="/WEB-INF/views/headers/header.jsp" />    
+        <put-attribute name="menu" value="/WEB-INF/views/menus/menu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/forms/forgot-password-page.jsp"/>  
+    </definition>
+    
+    
+  
+</tiles-definitions>  
