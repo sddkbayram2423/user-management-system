@@ -6,9 +6,9 @@ In this project Maven, Spring Framework,Spring MVC,Spring Securty, JPA , MySQL, 
 
 Only Servlet Container is enough to run project and see on the browser. 
 
-You must configure your database values(username,password, databasename) . After that go to AppConfig.class and change "hibernate.hbm2ddl.auto=create".
+In root-context.xml file you must configure your database values(username,password, databasename) . After that change "hibernate.hbm2ddl.auto=create".
 
- Go to MailService.class and congigure your smpt settings than download  <a href="http://nilhcem.com/FakeSMTP/download.html">FakeSMPT.jar</a> and run it
+Go to MailService.class and congigure your smpt settings than download  <a href="http://nilhcem.com/FakeSMTP/download.html">FakeSMPT.jar</a> and run it
 
 When you run project firstly tables will be created in MySQL.
 
