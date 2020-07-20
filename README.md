@@ -6,7 +6,7 @@ In this project Maven, Spring Framework,Spring MVC,Spring Securty, JPA , MySQL, 
 
 Only Servlet Container is enough to run project and see on the browser. 
 
-Only you must configure your database values(username,password, databasename) . After that go to AppConfig.class and change "hibernate.hbm2ddl.auto=create".
+You must configure your database values(username,password, databasename) . After that go to AppConfig.class and change "hibernate.hbm2ddl.auto=create".
 
  Go to MailService.class and congigure your smpt settings than download  <a href="http://nilhcem.com/FakeSMTP/download.html">FakeSMPT.jar</a> and run it
 
